@@ -13,8 +13,9 @@
     jQuery(document).ready(function() {
         var viewObj = {el: $('body')};
         var teamView = new TeamView(viewObj);
-        var zombie = new Zombie();
-        var zombieView = new ZombieView({model : zombie, survivors : teamView});
+   //     var zombie = new Zombie();
+  //     var zombieView = new ZombieView({model : zombie, survivors : teamView});
+        var hordeView = new HordeView({el: $('body'), survivors : teamView});
     });
     
 
