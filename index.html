@@ -7,14 +7,27 @@
     <script type="text/javascript" src="3rd_party/backbone-min.js"></script>
 
     <script type="text/javascript" src="js/survivor.js"></script>
+    <script type="text/javascript" src="js/zombie.js"></script>
 
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        var viewObj = {el: $('body')};
+        var teamView = new TeamView(viewObj);
+        var zombie = new Zombie();
+        var zombieView = new ZombieView({model : zombie, survivors : teamView});
+    });
+    
+
+</script>
 </head>
 <body>
     <div id="game">
             <div id="map">
+
                 <div class="clear-both"></div>
             </div>
         </div>
+
 
 </body>
 </html>

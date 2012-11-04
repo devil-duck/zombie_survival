@@ -1,5 +1,3 @@
-jQuery(document).ready(function($) {
-
  var Survivor = Backbone.Model.extend({
   //The atomic part of our Model. A model is basically a Javascript object, i.e. key-value pairs, with some helper functions
     defaults: {
@@ -93,8 +91,4 @@ var TeamView = Backbone.View.extend({
     });
     $('#map', this.el).append(survivorView.render().el);
   }
-});
-
-var teamView = new TeamView();
-
 });
